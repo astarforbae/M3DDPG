@@ -3,7 +3,6 @@ import sys
 sys.path.append("C:\\Users\\LEGION\\Desktop\\RL\\Codes\\m3ddpg")
 sys.path.append("C:\\Users\\LEGION\\Desktop\\RL\\Codes\\m3ddpg\\multiagent-particle-envs")
 
-print(sys.path)
 import tensorflow.contrib.layers as layers
 from maddpg.trainer.maddpg import MADDPGAgentTrainer
 import maddpg.common.tf_util as U
@@ -14,6 +13,7 @@ import time
 import pickle
 import os
 
+os.putenv("SUPPRESS_MA_PROMPT", '1')
 
 def parse_args():
     parser = argparse.ArgumentParser(
