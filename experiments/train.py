@@ -1,5 +1,6 @@
+import os
+os.environ["SUPPRESS_MA_PROMPT"] = "1"
 import sys
-# sys.path.append("../multiagent-particle-envs")
 sys.path.append("C:\\Users\\LEGION\\Desktop\\RL\\Codes\\m3ddpg")
 sys.path.append("C:\\Users\\LEGION\\Desktop\\RL\\Codes\\m3ddpg\\multiagent-particle-envs")
 
@@ -11,9 +12,6 @@ import numpy as np
 import tensorflow as tf
 import time
 import pickle
-import os
-
-os.putenv("SUPPRESS_MA_PROMPT", '1')
 
 def parse_args():
     parser = argparse.ArgumentParser(
